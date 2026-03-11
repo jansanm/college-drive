@@ -67,6 +67,7 @@ button {
 .gradient-text {
   background: var(--gradient);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -112,6 +113,14 @@ input:focus,
 select:focus {
   outline: none;
   border-color: var(--primary);
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 0 4px rgba(58, 212, 255, 0.1);
+}
+
+.input-focus:focus {
+  border-color: var(--primary) !important;
+  background: rgba(255, 255, 255, 0.05) !important;
+  box-shadow: 0 0 0 4px rgba(58, 212, 255, 0.1) !important;
 }
 
 label {
